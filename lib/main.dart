@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_guide/answer.dart';
 import 'package:flutter_complete_guide/question.dart';
 import './question.dart';
+import './answer.dart';
 
 void main() => runApp(MyApp());
 
@@ -38,18 +40,9 @@ class _MyAppState extends State<MyApp> {
             Question(
               questions.elementAt(_questionIndex),
             ),
-            ElevatedButton(
-                child: Text('Answer 1'), onPressed: _answerquestions),
-            ElevatedButton(
-              child: Text('Answer 2'),
-              onPressed: () => print('Answer 2 is chosen'),
-            ),
-            ElevatedButton(
-              child: Text('Answer 3'),
-              onPressed: () {
-                print('Answer 3 is chosen');
-              },
-            ),
+            Answer(_answerquestions),
+            Answer(_answerquestions),
+            Answer(_answerquestions),
           ],
         ),
       ),
