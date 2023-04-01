@@ -72,9 +72,10 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Kartikey\'s First App'),
+          title: Text('Quiz App'),
         ),
         body: _questionIndex < _questions.length
             ? Quiz(

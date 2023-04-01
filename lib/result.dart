@@ -9,13 +9,17 @@ class Result extends StatelessWidget {
   String get resultPhrase {
     String resultText;
     if (resultScore <= 10) {
-      resultText = 'You Are Dumb';
-    } else if (resultScore <= 20) {
-      resultText = 'You Are Innocent';
+      resultText =
+          'You are Weak';
+    } else if (resultScore <=15 ) {
+      resultText =
+          'You are Innocent ';
     } else if (resultScore <= 25) {
-      resultText = 'You Are Strong';
+      resultText =
+          'You are Strong';
     } else {
-      resultText = 'You are Smart';
+      resultText =
+          'You are smart';
     }
     return resultText;
   }
